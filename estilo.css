@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans&display=swap'); /* Fonte principal usada no site*/
+
+body{   /* estilização geral*/
+    background-color: #D3B5E5;
+    color: black;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: "Reddit Sans", sans-serif; 
+}
+
+.main-title{
+    text-align: center;
+}
+
+.main-title h1{   /* estilização do titulo principal de todas as paginas*/
+    display: inline-block;
+    font-size: 48px;
+    text-transform: uppercase;
+    padding: 16px;
+    font-weight: normal;
+    border: 2px solid #7106af; 
+}
+
+.header{      /*menu do lado direito*/
+    display: flex;
+    padding: 16px;
+    justify-content: right; 
+}
+
+
+.header__nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 8px;
+}
+
+.header__nav a{    /* estilização do menu*/
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px; 
+}
+
+.header__nav a:hover{
+    text-decoration: underline;
+    background-color: rgba(60, 20, 60, .3);
+}
+
+
+.sobre-mim{         /* faz o texto e a imagem ficar lado a lado*/
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+    
+}
+
+.sobre-mim_infos{
+    padding: 30px;
+    
+}
+
+.second_title{     /* estilização do titulo secundário de todas as páginas*/
+    border-left: 3px solid #7106af;
+    padding-left: 8px;
+    text-transform: uppercase;
+}
+
+.sobre-mim_imagem{
+    padding: 30px;
+}
+
+.sobre-mim_imagem img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px -6px black;
+}
+
+.formacao{
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px -6px black;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+}
+
+.contato_infos{
+    text-align: center;
+    padding: 8px;
+    box-shadow: 0 5px 15px -6px black;
+    border-radius: 6px;
+}
+
+.portfolio{   /* faz as imagens do porfolio ficar lado a lado com quebra de linha*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 860px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px -6px black;
+    gap: 16px;
+    padding: 16px; 
+}
+
+.port_content{
+    flex-grow: 1;
+}
+
+.port_content img{
+    width: 100%;
+    display: block;
+}
+
+.port_content p{
+    border-left: 2px solid #7106af;
+    padding-left: 4px;
+}
+
+.port_content img:hover{
+    outline: 2px solid;
+    opacity: .5;
+}
+
